@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ #letters_list {
+  display : inline-block;
+  margin-right: 10px;
+  font-size: 2em;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(86, 153, 241);
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+ }

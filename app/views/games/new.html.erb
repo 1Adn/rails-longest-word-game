@@ -1,0 +1,16 @@
+<container>
+<div class="card">
+<h1>New game</h1>
+<ul>
+  <% @letters.each do |letter| %>
+    <li id="letters_list"><%= letter %></li>
+  <%end%>
+</ul>
+<form action="/score" method="POST" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :grid_letters, @letters %>
+  <input type="text" name="word">
+  <input type="submit" value ="Play">
+</form>
+</div>
+</container>
